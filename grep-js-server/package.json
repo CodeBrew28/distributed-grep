@@ -1,5 +1,5 @@
 {
-  "name": "tcp",
+  "name": "grep-js-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,6 +9,9 @@
   "author": "Aria <arshiam2828@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.4"
+    "execa": "^1.0.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "ws": "^6.1.0"
   }
 }
