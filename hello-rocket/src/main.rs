@@ -3,7 +3,7 @@ use std::net::TcpListener;
 use std::thread;
 
 fn main() {
-    let listener = TcpListener::bind("127.0.0.1:3000").unwrap();
+    let listener = TcpListener::bind("0.0.0.0:3000").unwrap();
     println!("listening started, ready to accept");
     for stream in listener.incoming() {
         thread::spawn(|| {
