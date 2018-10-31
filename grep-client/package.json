@@ -1,0 +1,14 @@
+{
+  "name": "grep-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Aria <arshiam2828@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^6.1.0"
+  }
+}
