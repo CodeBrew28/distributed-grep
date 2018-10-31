@@ -1,0 +1,9 @@
+ [package]
+name = "grep-server"
+version = "0.1.0"
+authors = ["arshiam2 <arshiam2@illinois.edu>"]
+
+[dependencies]
+  ws = { version = "*", git = "https://github.com/housleyjk/ws-rs"}
+
+  
