@@ -37,5 +37,5 @@ impl Handler for Client {
 }
 
 fn main() {
-  connect("ws://127.0.0.1:3012", |out| Client { out: out } ).unwrap()
+  connect("ws://127.0.0.1:3000", |out| Client { out: out } ).unwrap()
 } 

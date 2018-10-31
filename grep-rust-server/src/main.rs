@@ -46,5 +46,5 @@ impl Handler for Server {
 fn main() {
 //   listen("127.0.0.1:3012", |out| Server { out: out } ).unwrap()
   let count = Rc::new(Cell::new(0));
-  listen("127.0.0.1:3012", |out| { Server { out: out, count: count.clone() } }).unwrap()
+  listen("127.0.0.1:3000", |out| { Server { out: out, count: count.clone() } }).unwrap()
 } 
