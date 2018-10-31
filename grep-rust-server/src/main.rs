@@ -70,7 +70,7 @@ extern crate ws;
 use ws::listen;
 
 fn main() {
-    listen("127.0.0.1:3000", |out| {
+    listen("0.0.0.0:3000", |out| {
         move |msg| {
         println!("The server got a message");
         out.send(msg)
