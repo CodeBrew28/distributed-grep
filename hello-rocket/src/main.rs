@@ -1,14 +1,14 @@
-#![feature(plugin)]
-#![plugin(rocket_codegen)]
+use std::io::Write;
+use std::net::TcpListener;
+use std::thread;
 
-extern crate rocket;
 fn main() {
-  rocket::ignite()
-    .mount("/", routes![index])
-    .launch();
-}
-
-#[get("/")]
-fn index() -> String {
-  "Hello Wooooooorrrrlllld! Not much a blog yet, eh?".to_string()
+    let listener = TcpListener::bind("127.0.0.1:3000").unwrap();
+    println!("listening started, ready to accept");
+    for stream in listener.incoming() {
+        thread::spawn(|| {
+            let mut stream = stream.unwrap();
+            stream.write(b"Hello World\r\n").unwrap();
+        });
+    }
 }
