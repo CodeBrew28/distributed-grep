@@ -14,8 +14,9 @@ impl Handler for Server {
 
     fn on_open(&mut self, _: Handshake) -> Result<()> {
         // We have a new connection, so we increment the connection counter
+        println!("Running on port 3000");
         Ok(self.count.set(self.count.get() + 1))
-        println!("Running on port 3000")
+        // println!("Running on port 3000");
     }
 
 
