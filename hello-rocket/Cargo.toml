@@ -6,3 +6,9 @@ authors = ["arshiam2 <arshiam2@illinois.edu>"]
 [dependencies]
 rocket = "0.3.6"
 rocket_codegen = "0.3.6"
+
+
+[development]
+address = "localhost"
+port = 3000
+limits = { forms = 32768 }
